@@ -1,0 +1,381 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #5da2d5;
+    background-image: url("img/linesBackground.png");
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+#wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+    height: auto;
+    width: 98%;
+    margin: auto;
+    padding-top: 30px;
+    margin-bottom: 40px;
+}
+
+#text {
+    padding: 20px;
+}
+
+article {
+    position: relative;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    width: 43%;
+    flex-flow: wrap;
+    height: auto;
+    margin: 10px 10px 30px 10px;
+    box-shadow: 0px 0px 10px #223245;
+    padding: 10px;
+    background-color: #ECECEC;
+}
+
+h2 {
+    text-align: center;
+    font-family: sans-serif;
+    padding: 7px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.text {
+    position: relative;
+    text-align: justify;
+}
+
+.image {
+    position: relative;
+}
+
+#hogwartsImages, #websiteImages, #dungeonsImages, #csharpImages, #csharpImages2, #csharpImages3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+header {
+    position: relative;
+    height: 100%;
+    color: #FFFFFF;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 10px;
+    opacity: 0;
+}
+
+#logo {
+    height: 60%;
+    width: 100%;
+    object-fit: contain;
+    opacity: 0;
+}
+
+#arrowDown {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    margin-top: 5%;
+    cursor: pointer;
+    opacity: 0;
+}
+
+#iconL {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    top: -25px;
+    left: -20px;
+    z-index: 15;
+}
+
+.githubLink {
+    text-align: center;
+    margin: 20px 0px 5px 0px;
+}
+
+.githubLink button {
+    height: auto;
+    border: 3px solid black;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.githubLink a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+span {
+    position: relative;
+    display: inline-block;
+    padding: 7px;
+    margin: 11px 4px;
+    min-width: 40px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}
+
+.imageArrowRight {
+    position: absolute;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    bottom: 45%;
+    cursor: pointer;
+    transform: rotate(-90deg);
+}
+
+.imageArrowLeft {
+    position: absolute;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    left: 0;
+    bottom: 45%;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+
+#about {
+    height: auto;
+    width: 89%;
+    background-color: #ECECEC;
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #181c3a;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#profilePic {
+    width: 30%;
+    object-fit: cover;
+    object-position: middle;
+    border-radius: 5px;
+}
+
+#profileText {
+    margin: 0;
+    margin-left: 0px;
+    width: 35%;
+    margin-top: 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#profileSkills {
+    margin: 0;
+    margin-left: 0px; 
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.smallSkill {
+    height: 40%;
+    margin: 10px;
+    padding: 30px;
+    border-style: inset;
+    background-color: #90CCF4;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h3 {
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+h4 {
+    margin: 0;
+    margin-bottom: 17px;
+}
+
+#name {
+    position: absolute;
+    left: 6.5%;
+    transform: translate(-6.5%);
+    margin-top: -25px;
+    padding: 0px 15px;
+    background-color: #5DA2D5;
+    border-radius: 5px;
+    box-shadow: 3px 3px 1px  rgb(36, 88, 122);
+    color: white;
+}
+
+#contact {
+    text-align: center;
+    border-radius: 4px;
+    width: 250px;
+    margin: 30px auto 10px auto;
+    font-size: 16px;
+    background-color: #5DA2D5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    box-shadow: 2px 2px 2px #727272;
+    cursor: pointer;
+}
+
+#contact a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+#java {
+    background-color: #ff764d;
+    box-shadow: 3px 3px 1px  #b44d43;
+}
+
+#mysql {
+    background-color: #f477ff;
+    box-shadow: 3px 3px 1px  #ab48b4;
+}
+
+#html {
+    background-color: #ffad77;
+    box-shadow: 3px 3px 1px  #b87345;
+}
+
+#css {
+    background-color: #7790ff;
+    box-shadow: 3px 3px 1px  #4155ad;
+}
+
+#js {
+    background-color: #82eb68;
+    box-shadow: 3px 3px 1px  #4f9e3b;
+}
+
+#csharp {
+    background-color: #c977ff;
+    box-shadow: 3px 3px 1px  #7638a0;
+}
+
+#net {
+    background-color: #68b4fa;
+    box-shadow: 3px 3px 1px  #326492;
+}
+
+/* LARGE COMPUTER */
+@media screen and (min-width: 1500px) {
+
+    article {
+        width: 30%;
+    }
+}
+
+/* IPAD MODE */
+@media screen and (max-width: 840px) {
+
+    article {
+        width: 100%;
+    }
+
+    #profilePic {
+        width: 40%;
+        object-fit: cover;
+    }
+
+    #about {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #profileText {
+        width: 50%;
+        break-after: always;
+    }
+
+    #profileSkills {
+        flex-direction: row;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #contact {
+        width: 100%;
+    }
+
+}
+
+/* PHONE MODE */
+@media screen and (max-width: 600px) {
+
+    article {
+        width: 100%;
+    }
+
+    #about {
+        flex-direction: column;
+    }
+
+    #profilePic {
+        width: 100%;
+    }
+
+    #profileText {
+        width: 100%;
+        break-after: auto;
+    }
+
+    #profileSkills {
+        flex-direction: column;
+    }
+
+    #topPage {
+        display: block;
+    }
+
+    #contact {
+        width: 95%;
+    }
+}
