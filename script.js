@@ -21,6 +21,8 @@ var hogwartsImages = [
     "img/hogwarts4.png",
     "img/hogwarts5.png",
     "img/hogwarts6.png",
+    "img/hogwarts7.png",
+    "img/hogwarts8.png",
 ];
 
 var websiteImages = [
@@ -51,7 +53,7 @@ $("#hogwartsImagesRight").click(function() {
             var image = hogwartsImages[i];
             var imageIndex = hogwartsImages.indexOf(image)+1;
             document.getElementById("hogwartsImages").setAttribute("src", hogwartsImages[imageIndex]);
-            if (i == 5) {
+            if (i == 7) {
                 document.getElementById("hogwartsImages").setAttribute("src", hogwartsImages[0]);     
             }  
         }
@@ -67,7 +69,7 @@ $("#hogwartsImagesLeft").click(function() {
             var imageIndex = hogwartsImages.indexOf(image)-1;
             document.getElementById("hogwartsImages").setAttribute("src", hogwartsImages[imageIndex]);  
             if (i == 0) {
-                document.getElementById("hogwartsImages").setAttribute("src", hogwartsImages[5]);     
+                document.getElementById("hogwartsImages").setAttribute("src", hogwartsImages[7]);     
             }  
         }
     }

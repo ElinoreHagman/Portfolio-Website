@@ -55,7 +55,7 @@ h2 {
     position: relative;
 }
 
-#hogwartsImages, #websiteImages, #dungeonsImages, #csharpImages, #csharpImages2, #csharpImages3 {
+#hogwartsImages, #websiteImages, #dungeonsImages, #csharpImages {
     width: 100%;
     height: 100%;
     object-fit: cover;
