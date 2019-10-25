@@ -2,13 +2,18 @@ function slideText() {
     $("#logo").css({ height: "100%" }).animate({ height: "60%",  opacity: 1 }, 200);
     $("#htext1").css({ marginLeft: "100%" }).animate({ opacity: 1, marginLeft: "0" }, 500);
     $("#htext2").delay(300).css({ marginRight: "100%" }).animate({ opacity: 1, marginRight: "0" }, 500);
-    $("#htext3").delay(700).css({ marginTop: "10%" }).animate({ opacity: 1, marginTop: "0" }, 300);
-    $("#arrowDown").delay(1100).animate({ opacity: 1 }, 400);
+    $("#headerArrow").delay(800).animate({ opacity: 1 }, 300);
 }
 
 document.body.onload = slideText();
 
-$("#arrowDown").click(function() {
+$("#headerArrow").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#about").offset().top
+    }, 700);
+});
+
+$("#profileArrow").click(function() {
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#wrapper").offset().top
     }, 700);
@@ -41,8 +46,8 @@ var dungeonsImages = [
 
 var csharpImages = [
     "img/project3.jpg",
-    "img/project1.jpg",
-    "img/project2.jpg"
+    "img/project3.jpg",
+    "img/project3.jpg"
 ];
 
 $("#hogwartsImagesRight").click(function() {
@@ -164,3 +169,34 @@ $("#csharpImagesLeft").click(function() {
         }
     }
 });
+
+/* PROGRESS BARS ANIMATION */
+function runBarAnimation() {
+    var dict = {
+        "bar1": 100, "bar2": 85, "bar3": 85, "bar4": 70,
+         "bar5": 90, "bar6": 85, "bar7": 85, "bar8": 70
+    };
+
+    for (var key in dict) {
+        var value = dict[key];
+        animateBars(key, value);
+    }
+}
+
+function animateBars(theBar, totalLength) {
+    var wholeBar = document.getElementById(theBar);
+    var iteration = setInterval(addLength, 10);
+    var widthOfProgress = 0;
+
+    function addLength() {
+        if (widthOfProgress >= totalLength) {
+           
+            clearInterval(iteration);
+        } else {
+            widthOfProgress++;
+            wholeBar.style.width = widthOfProgress + "%"; 
+        }
+    }
+}
+document.body.onload = runBarAnimation();
+/**/

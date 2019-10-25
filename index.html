@@ -1,141 +1,206 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
+
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Elinore Hagman</title>
     <link rel="stylesheet" href="stylesheet.css">
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <link rel="icon" href="img/logo_small.png">
 </head>
+
 <body>
-        <header>
-                <img id="logo" src="img/logo.png">
-                <h1 id="htext1">Elinore Hagman</h1>
-                <h1 id="htext2">Projects</h1>
-                <h1 id="htext3">Studying Systems Science at Örebro University</h1>
-                <img id="arrowDown" src="img/arrowDown.png">
-             </header>
+    <header>
+        <img id="logo" src="img/logo.png" alt="logo">
+        <h1 id="htext1">Elinore Hagman</h1>
+        <h1 id="htext2">Portfolio</h1>
+        <img class="arrowDown" id="headerArrow" src="img/arrowSlide.png" alt="arrow pointing down">
+    </header>
+
+    <div id="middle">
+            
+    <div id="about">
+        <img id="profileArrow" src="img/arrowSlide.png" alt="arrow pointing down"> 
+
+        <div id="pictureArea">
+            <div></div><img id="profilePic" src="img/profile.jpg" alt="profile picture">
+
+        </div>
+
+        <div id="profileText">
+            <div>
+                <h3>&lt; Elinore Hagman &gt;</h3>
+                <p>I'm from the puny island called Åland, but right now I study Systems Science in Sweden at Örebro
+                    University.
+                    I also have a Finnish upper secondary exam in media and communication, where a basic level of web
+                    design,
+                    animation, graphic design, audio- and photo production were taught. I've worked as a editor for a
+                    smaller local dog agility paper, and also made a website for Åland's union central organization.
+                    Privately I've worked a lot with photo manipulation
+                    and video making.</p>
+                <p>I find innovative solutions intriguing, and I like to break down complex problems
+                    into a comprehensible matter. In my work, whether it's programming or any other production, I
+                    focus on simplistic but interesting design, and a user-friendly UI.
+                </p>
+            </div>
+
+        </div>
+        
+        <div id="progressBarArea">
+            <!-- SKILL PROGRESS BARS -->
+            <div class="skills">
+                <h5>Adobe</h5>
+                <p class="textBar">Photoshop</p>
+                <div class="barBackground">
+                    <div id="bar1"></div>
+                </div>
+
+                <p class="textBar">Premiere</p>
+                <div class="barBackground">
+                    <div id="bar2"></div>
+                </div>
+
+                <p class="textBar">Indesign</p>
+                <div class="barBackground">
+                    <div id="bar3"></div>
+                </div>
+
+                <p class="textBar">Illustrator</p>
+                <div class="barBackground">
+                    <div id="bar4"></div>
+                </div>
+            </div>
+            <!---->
+
+            <!-- LANGUAGES PROGRESS BARS -->
+            <div class="skills">
+                <h5>Languages</h5>
+                <p class="textBar">HTML,CSS</p>
+                <div class="barBackground">
+                    <div id="bar5"></div>
+                </div>
+                <p class="textBar">Java, C#</p>
+                <div class="barBackground">
+                    <div id="bar6"></div>
+                </div>
+                <p class="textBar">SQL</p>
+                <div class="barBackground">
+                    <div id="bar7"></div>
+                </div>
+                <p class="textBar">Javascript/Jquery</p>
+                <div class="barBackground">
+                    <div id="bar8"></div>
+                </div>
+                
+            </div>
+            <!---->
+        </div>
+        </div>
+    </div>
+
 
     <div id="wrapper">
 
-        <article id="project1" data-projectId="project1"> 
+        <article id="project1" data-projectId="project1">
             <div class="image">
-                            
-                <img class="imageArrowLeft" id="hogwartsImagesLeft" src="img/arrowSlide.png">
-                <img class="imageArrowRight" id="hogwartsImagesRight" src="img/arrowSlide.png">
-                <img id="hogwartsImages" src="img/hogwarts1.png">
+
+                <img class="imageArrowLeft" id="hogwartsImagesLeft" src="img/arrowSlide.png" alt="arrow left">
+                <img class="imageArrowRight" id="hogwartsImagesRight" src="img/arrowSlide.png" alt="arrow right">
+                <img id="hogwartsImages" src="img/hogwarts1.png" alt="image of project">
             </div>
-            <div id="iconL"><span id="java">JAVA</span><span id="mysql">MySQL</span></div>
-            <div class="text" id="p1text">
+            <div class="iconL"><span class="java">JAVA</span><span class="mysql">MySQL</span></div>
+            <div class="text">
                 <h2>Administrative system</h2>
-                <p>School assignment. An administrative system for Hogwarts that both teachers and students can use. Based on a requirement specification,
-                    the system was to be programmed in Netbeans, together with a already existing database. Teachers can add, change or delete students,
-                    courses and grades. Teachers can also add or retract points in the House Cup. Students can use the system for information searches, like their grades or courses.
+                <p>School assignment. An administrative system for Hogwarts that both teachers and students can use.
+                    Based on a requirement specification,
+                    the system was to be programmed in Netbeans, together with a already existing database. Teachers can
+                    add, change or delete students,
+                    courses and grades. Teachers can also add or retract points in the House Cup. Students can use the
+                    system for information searches, like their grades or courses.
                     I put a lot of effort in making the system user-friendly, and managed to create a system
                     that's easy to navigate and has a nice beginner level of design to it.</p>
             </div>
-            <div class="githubLink"><button><a href="https://drive.google.com/file/d/1z2qyeNGTAVVhpX9DeovJSBGJc7L9V3xa/view?usp=sharing" target="_blank">Watch project presentation <img src="img/movieIcon.png" style="vertical-align:middle; height: 40px"></a></button></div>
+            <div class="githubLink"><a href="#"
+                        target="_blank">Watch project presentation <img src="img/movieIcon.png" alt="movie icon"
+                            style="vertical-align:middle; height: 40px"></a></div>
 
         </article>
 
         <article id="project2" data-projectId="project2">
             <div class="image">
-                    <img class="imageArrowLeft" id="websiteImagesLeft" src="img/arrowSlide.png">
-                    <img class="imageArrowRight" id="websiteImagesRight" src="img/arrowSlide.png">
-                <img id="websiteImages" src="img/website1.png">
+                <img class="imageArrowLeft" id="websiteImagesLeft" src="img/arrowSlide.png" alt="arrow left">
+                <img class="imageArrowRight" id="websiteImagesRight" src="img/arrowSlide.png" alt="arrow right">
+                <img id="websiteImages" src="img/website1.png" alt="image of project">
             </div>
-            <div id="iconL"><span id="html">HTML</span><span id="css">CSS</span><span id="js">JS</span></div>
-            <div class="text" id="p1text">
+            <div class="iconL"><span class="html">HTML</span><span class="css">CSS</span><span class="js">JS</span></div>
+            <div class="text">
                 <h2>Portfolio website</h2>
-                <p>School assignment. The website were to be a portfolio site with focus on mobile first. It had a requirement specification including a little bit of jQuery, slideshows
-                    and a contact form, with realtime validation and regex. The programming was done in Visual Studio Code. 
-                    The HTML and CSS is validated without errors by the W3C:s markup validation service and is fully responsive.
-                    I wanted to push the jQuery aspect of the assignment and made a gallery showing of thumbnails of the photos
+                <p>School assignment. The website were to be a portfolio site with focus on mobile first. It had a
+                    requirement specification including a little bit of jQuery, slideshows
+                    and a contact form, with realtime validation and regex. The programming was done in Visual Studio
+                    Code.
+                    The HTML and CSS is validated without errors by the W3C:s markup validation service and is fully
+                    responsive.
+                    I wanted to push the jQuery aspect of the assignment and made a gallery showing of thumbnails of the
+                    photos
                     presented. When clicked a bigger window showing the picture and associated text was shown.
                 </p>
             </div>
-            <div class="githubLink"><button><a href="https://github.com/ElinoreHagman/Project-Portfolio" target="_blank">Check code on Github <img src="img/githubIcon.png" style="vertical-align: middle; height: 35px"></a></button></div>
+            <div class="githubLink"><a href="#" target="_blank">Check code on Github <img src="img/githubIcon.png" alt="icon github" style="vertical-align: middle; height: 35px"></a></div>
         </article>
 
         <article id="project3" data-projectId="project3">
             <div class="image">
-                    <img class="imageArrowLeft" id="dungeonImagesLeft" src="img/arrowSlide.png">
-                    <img class="imageArrowRight" id="dungeonImagesRight" src="img/arrowSlide.png">
-                <img id="dungeonsImages" src="img/dungeons1.png">
+                <img class="imageArrowLeft" id="dungeonImagesLeft" src="img/arrowSlide.png" alt="arrow left">
+                <img class="imageArrowRight" id="dungeonImagesRight" src="img/arrowSlide.png" alt="arrow right">
+                <img id="dungeonsImages" src="img/dungeons1.png" alt="image of project">
             </div>
-            <div id="iconL"><span id="csharp">C#</span></div>
-            <div class="text" id="p1text">
+            <div class="iconL"><span class="csharp">C#</span></div>
+            <div class="text">
                 <h2>Terminal Dungeon Crawler</h2>
-                <p>Made on my free time. Simplistic super short game created for practising the basics of C# and introducing myself
-                    to game design. The player needs to reach the end boss, there is only one way that is correct, and if the player chooses the wrong path
-                    they get either a monster fight or treasure. Some features are: leveling up after 2 monsters killed, randomized
-                    monster names with random hp & attack damage, chance to find gold, and three different classes to choose from. After
+                <p>Made on my free time. Simplistic super short game created for practising the basics of C# and
+                    introducing myself
+                    to game design. The player needs to reach the end boss, there is only one way that is correct, and
+                    if the player chooses the wrong path
+                    they get either a monster fight or treasure. Some features are: leveling up after 2 monsters killed,
+                    randomized
+                    monster names with random hp & attack damage, chance to find gold, and three different classes to
+                    choose from. After
                     the player beats the boss, the stats are saved and listed together with other playthroughs.
                     Programmed in Visual Studio.</p>
             </div>
-            <div class="githubLink"><button><a href="https://github.com/ElinoreHagman/Dungeons-And-Dragons" target="_blank">Check code on Github <img src="img/githubIcon.png" style="vertical-align: middle; height: 35px"></a></button></div>
+            <div class="githubLink"><a href="#"
+                        target="_blank">Check code on Github <img src="img/githubIcon.png" alt="icon github"
+                            style="vertical-align: middle; height: 35px"></a></div>
         </article>
 
         <article id="project4" data-projectId="project4">
             <div class="image">
-                    <img class="imageArrowLeft" id="csharpImagesLeft" src="img/arrowSlide.png">
-                    <img class="imageArrowRight" id="csharpImagesRight" src="img/arrowSlide.png">
-                <img id="csharpImages" src="img/project1.jpg">
+                <img class="imageArrowLeft" id="csharpImagesLeft" src="img/arrowSlide.png" alt="arrow left">
+                <img class="imageArrowRight" id="csharpImagesRight" src="img/arrowSlide.png" alt="arrow right">
+                <img id="csharpImages" src="img/project1.jpg" alt="image of project">
             </div>
-            <div id="iconL"><span id="csharp">C#</span><span id="net">.NET</span></div>
-            <div class="text" id="p1text">
+            <div class="iconL"><span class="csharp">C#</span><span class="net">.NET</span></div>
+
+            <div class="text">
                 <h2>Automatic RSS-Reader</h2>
-                <p>School assignment. Programmed in Visual Studio with WinForms.</p>
+                <p>Ongoing school assignment.</p>
             </div>
-            <div class="githubLink"><button><a href="#" target="_blank">Check code on Github <img src="img/githubIcon.png" style="vertical-align: middle; height: 35px"></a></button></div>
         </article>
-        
-    </div>
-
-    <div id="name"><p>ELINORE HAGMAN</p></div>
-
-    <div id="about">
-        <img id="profilePic" src="img/profile.jpg">
-
-        <div id="profileText">
-            <div>
-            <p>I'm from the puny island called Åland, but right now I study Systems Science in Sweden at Örebro University.
-                I also have a Finnish upper secondary exam in media and communication, where a basic level of web design,
-                animation, graphic design, audio- and photo production were taught. I've worked as a editor for a
-                smaller local dog agility paper, and also made a website for Åland's union central organization. Privately I've worked a lot with photo manipulation
-                and video making.</p>
-                <p>I find innovative solutions intriguing, and I like to break down complex problems
-                    into a comprehensible matter. In my work, whether it's programming or any other production, I
-                    focus on simplistic but interesting design, and a user-friendly UI. 
-                </p>
-            </div>
-                <div id="contact"><a href="mailto:elinorehagman@gmail.com">Contact me <img src="img/mailIcon.png" style= "vertical-align: middle"></a></div>
-        </div>
-        <div id="profileSkills">
-            <div class="smallSkill">
-                <div>
-                <h4>Adobe programs I am well accustomed to</h4>
-                </div>
-                <div>
-                <img src="img/photoshop.png">
-                <img src="img/premiere.png">
-                <img src="img/indesign.png">
-                </div>
-            </div>
-            <div class="smallSkill">
-                    <div>
-                <h4>Operating systems I work on</h4>
-                    </div>
-                <div>
-                <img src="img/windows.png">
-                <img src="img/apple.png">
-                </div>
-            </div>
-        </div>
-        
 
     </div>
-    
-<script src="script.js"></script>
+
+    <footer>
+            <h3>You can find me here</h3>
+        <div id="footerContent">
+            <div class="footerLink"><a href="#" target="_blank">Github <img src="img/githubIcon.png" alt="icon github" style="vertical-align: middle; height: 35px"></a></div>
+            <div class="footerLink"><a href="#" target="_blank">Linkedin <img src="img/linkedin.png" alt="icon linkedin" style="vertical-align: middle; height: 35px"></a></div>
+            <div class="footerLink"><a href="#" target="_blank">Email <img src="img/mail.png" alt="icon mail" style="vertical-align: middle; height: 35px"></a></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
