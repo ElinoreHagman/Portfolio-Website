@@ -8,6 +8,12 @@ html, body {
     font-size: 15px;
 }
 
+#language {
+    position: absolute;
+    width: 50px;
+    right: 5px;
+}
+
 #wrapper {
     position: relative;
     display: flex;
@@ -285,43 +291,39 @@ footer {
     position: relative;
     width: 100%;
     background-color: #ECECEC;
-    height: 150px;
+    height: auto;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-.fLinks {
-    border: 3px solid black;
-    border-radius: 0;
-    padding: 10px;
-    color: black;
-}
-
-#footerContent {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
     margin: auto;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: auto;
+}
+
+.footerContent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    height: auto;
 }
 
 .footerLink {
     position: relative;
     text-align: center;
-    min-width: 130px;
-    margin: 70px 5px 5px 0px;
+    min-width: 120px;
     height: auto;
     border: 3px solid black;
     background-color: transparent;
     outline: none;
+    margin: 5px;
     cursor: pointer;
-    padding: 10px 5px;
+    padding: 10px 16px;
 }
 
-footer a {
+#mailLink {
+    width: 97%;
+}
+
+button {
     color: black;
     text-decoration: none;
     font-size: 15px;
@@ -329,7 +331,7 @@ footer a {
 }
 
 footer img {
-    padding-left: 5px;
+    padding-left: 10px;
 }
 
 .java, .mysql {
@@ -413,16 +415,13 @@ footer img {
     article {
         width: 90%;
     }
-
-    footer a {
-    font-size: 0;
+    
+    footer {
+        flex-direction: column;
     }
 
-    .footerLink {
-        min-width: 50px;
-    }
-
-    footer img {
-        padding-left: 1px;
+    #language {
+        left: 50%;
+        transform: translate(-50%);
     }
 }
