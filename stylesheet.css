@@ -421,7 +421,6 @@ footer img {
     }
 
     #language {
-        left: 50%;
-        transform: translate(-50%);
+        width: 35px;
     }
 }
