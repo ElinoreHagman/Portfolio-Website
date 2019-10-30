@@ -11,7 +11,24 @@ html, body {
 #language {
     position: absolute;
     width: 50px;
-    right: 5px;
+    right: 0;
+}
+
+.infoBox {
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: auto;
+    z-index: 99;
+    border-radius: 2px;
+    box-shadow: 2px 2px 7px rgba(186, 185, 185, 0.514);
+    display: none;
+}
+
+.infoBox p {
+    padding: 20px;
+    text-align: center;
+    line-height: 18px;
 }
 
 #wrapper {
@@ -33,12 +50,11 @@ html, body {
 
 article {
     position: relative;
-    border-radius: 5px;
+    border-radius: 2px;
     width: 43%;
     flex-flow: wrap;
     height: auto;
     margin: 10px 10px 30px 10px;
-    box-shadow: 0px 0px 10px #223245;
     padding: 10px;
     background-color: #ECECEC;
 }
@@ -55,6 +71,9 @@ h2 {
     position: relative;
     text-align: justify;
     margin-bottom: 100px;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 21px;
 }
 
 .image {
@@ -65,7 +84,7 @@ h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 header {
@@ -107,19 +126,6 @@ h1 {
     opacity: 0;
 }
 
-.iconL {
-    position: absolute;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    top: -25px;
-    left: -20px;
-    z-index: 15;
-}
-
 .githubLink {
     position: absolute;
     text-align: center;
@@ -133,25 +139,11 @@ h1 {
     background-color: transparent;
     outline: none;
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 10px 13px;
 }
 
-.githubLink a {
-    color: black;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-span {
-    position: relative;
-    display: inline-block;
-    padding: 7px;
-    margin: 11px 4px 11px 10px;
-    min-width: 40px;
-    text-align: center;
-    color: white;
-    border-radius: 5px;
+.githubLink img {
+    padding-left: 10px;
 }
 
 .imageArrowRight {
@@ -188,7 +180,6 @@ span {
     background-color: #ECECEC;
     margin: auto;
     margin-bottom: 40px;
-    box-shadow: 0px 0px 10px #181c3a;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -212,7 +203,7 @@ span {
 #profilePic {
     width: 400px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 #profileText {
@@ -270,9 +261,8 @@ h5 {
     background-color: #ffffff;
     width: 90%;
     min-width: 100px;
-    box-shadow: 2px 2px 2px #999999;
     margin: auto;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 #bar1, #bar2, #bar3, #bar4, #bar5, #bar6, #bar7, #bar8 {
@@ -283,7 +273,7 @@ h5 {
     width: 60%;
     height: 13px;
     margin-bottom: 10px;
-    border-radius: 4px;
+    border-radius: 2px;
     background-color: #5da2d5;
 }
 
@@ -328,15 +318,44 @@ button {
     text-decoration: none;
     font-size: 15px;
     font-weight: bold;
+    background-image: url("img/buttonB.png");
+    background-position-x: -540px;
+    background-repeat: no-repeat;
+    border-radius: 2px;
 }
 
 footer img {
     padding-left: 10px;
 }
 
+.iconL {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    top: -25px;
+    left: -20px;
+    z-index: 15;
+}
+
+span {
+    position: relative;
+    display: inline-block;
+    padding: 7px;
+    margin: 11px 4px 11px 10px;
+    min-width: 40px;
+    text-align: center;
+    color: white;
+    border-radius: 2px;
+}
+
 .java, .mysql {
     background-color: #e96823;
-    box-shadow: 3px 3px 1px  #8a2b0e;
+    box-shadow: 2px 2px 1px  #8a2b0e;
+    border-radius: 2px;
 }
 
 .html, .css, .js {

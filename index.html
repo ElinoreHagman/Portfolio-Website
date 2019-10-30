@@ -12,17 +12,17 @@
 
 <body>
     <header>
-        <a href="se"><img id="language" src="img/sweden.png" alt="swedish language"></a>
+        <a href="sv"><img id="language" src="img/sweden.png" alt="swedish language"></a>
         <img id="logo" src="img/logo.png" alt="logo">
         <h1 id="htext1">Elinore Hagman</h1>
-        <h1 id="htext2">Portfolio</h1>
-        <img class="arrowDown" id="headerArrow" src="img/arrowSlide.png" alt="arrow pointing down">
+        <h1 id="htext2">Programming Portfolio</h1>
+        <img class="arrowDown" id="headerArrow" src="img/arrowSlideH.png" alt="arrow pointing down">
     </header>
 
     <div id="middle">
 
         <div id="about">
-            <img id="profileArrow" src="img/arrowSlide.png" alt="arrow pointing down">
+            <img id="profileArrow" src="img/arrowSlideP.png" alt="arrow pointing down">
             <div id="pictureArea">
                 <div></div><img id="profilePic" src="img/profile.jpg" alt="profile picture">
             </div>
@@ -50,7 +50,10 @@
             <div id="progressBarArea">
                 <!-- SKILL PROGRESS BARS -->
                 <div class="skills">
-                    <h5>Adobe</h5>
+                    <div class="infoBox" id="adobeBox"><p><img src="img/infoIcon.png" style="vertical-align: top; height: 20px"> <br />
+                        These skill bars show what would put my skill level at in each program, and what my focus is, in relation to each other.</p></div>
+                    <h5>Adobe <img class="infoImage" id="adobeinfo" src="img/infoIcon.png" alt="info icon" style="vertical-align: top; height: 20px"></h5>
+                    
                     <p class="textBar">Photoshop</p>
                     <div class="barBackground">
                         <div id="bar1"></div>
@@ -75,8 +78,10 @@
 
                 <!-- LANGUAGES PROGRESS BARS -->
                 <div class="skills">
-                    <h5>Languages</h5>
-                    <p class="textBar">HTML, CSS3</p>
+                    <div class="infoBox" id="languageBox"><p><img src="img/infoIcon.png" style="vertical-align: top; height: 20px"> <br />
+                        These skill bars show what would put my skill level at in each programming language, and what my focus is, in relation to each other.</p></div>
+                        <h5>Languages <img class="infoImage" id="languageinfo" src="img/infoIcon.png" alt="info icon" style="vertical-align: top; height: 20px"></h5>
+                        <p class="textBar">HTML, CSS3</p>
                     <div class="barBackground">
                         <div id="bar5"></div>
                     </div>
@@ -119,10 +124,9 @@
                     I put a lot of effort in making the system user-friendly, and managed to create a system
                     that's easy to navigate and has a nice beginner level of design to it.</p>
             </div>
-            <div class="githubLink"><a href="https://github.com/ElinoreHagman/Administrative-System-Hogwarts"
-                    target="_blank">Check code on Github <img src="img/githubIcon.png" alt="github icon"
-                        style="vertical-align:middle; height: 40px"></a></div>
-
+            <button class="githubLink" onclick=" window.open('https://github.com/ElinoreHagman/Administrative-System-Hogwarts')">
+                Check code on Github <img src="img/githubIcon.png" alt="icon github"
+                    style="vertical-align: middle; height: 35px"></button>
         </article>
 
         <article id="project2" data-projectId="project2">
@@ -146,10 +150,10 @@
                     presented. When clicked a bigger window showing the picture and associated text was shown.
                 </p>
             </div>
-            <div class="githubLink"><a href="https://github.com/ElinoreHagman/Photography-Portfolio-Website"
-                    target="_blank">Check code on Github <img src="img/githubIcon.png" alt="icon github"
-                        style="vertical-align: middle; height: 35px"></a></div>
-        </article>
+            <button class="githubLink" onclick=" window.open('https://github.com/ElinoreHagman/Photography-Portfolio-Website')">
+                Check code on Github <img src="img/githubIcon.png" alt="icon github"
+                    style="vertical-align: middle; height: 35px"></button>
+             </article>
 
         <article id="project3" data-projectId="project3">
             <div class="image">
@@ -171,9 +175,9 @@
                     the player beats the boss, the stats are saved and listed together with other playthroughs.
                     Programmed in Visual Studio.</p>
             </div>
-            <div class="githubLink"><a href="https://github.com/ElinoreHagman/DungeonsAndDragons-Game"
-                    target="_blank">Check code on Github <img src="img/githubIcon.png" alt="icon github"
-                        style="vertical-align: middle; height: 35px"></a></div>
+            <button class="githubLink" onclick=" window.open('https://github.com/ElinoreHagman/DungeonsAndDragons-Game')">
+                Check code on Github <img src="img/githubIcon.png" alt="icon github"
+                    style="vertical-align: middle; height: 35px"></button>
         </article>
 
         <article id="project4" data-projectId="project4">

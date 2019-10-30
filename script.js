@@ -1,11 +1,26 @@
 function slideText() {
-    $("#logo").css({ height: "100%" }).animate({ height: "60%",  opacity: 1 }, 200);
-    $("#htext1").css({ marginLeft: "100%" }).animate({ opacity: 1, marginLeft: "0" }, 500);
-    $("#htext2").delay(300).css({ marginRight: "100%" }).animate({ opacity: 1, marginRight: "0" }, 500);
-    $("#headerArrow").delay(800).animate({ opacity: 1 }, 300);
+    $("#logo").animate({ opacity: 1 }, 1000);
+    $("#htext1").delay(100).css({ marginTop: "100px" }).animate({ opacity: 1, marginTop: "0" }, 500);
+    $("#htext2").delay(400).css({ marginTop: "100px" }).animate({ opacity: 1, marginTop: "0" }, 400);
+    $("#headerArrow").delay(700).animate({ opacity: 1 }, 300);
 }
-
 document.body.onload = slideText();
+
+$("#adobeinfo").mouseover(function() {
+    $("#adobeBox").stop().css({ display: "block" });
+});
+
+$("#adobeinfo").mouseleave(function() {
+    $("#adobeBox").stop().css({ display: "none" });
+});
+
+$("#languageinfo").mouseover(function() {
+    $("#languageBox").stop().css({ display: "block" });
+});
+
+$("#languageinfo").mouseleave(function() {
+    $("#languageBox").stop().css({ display: "none" });
+});
 
 $("#headerArrow").click(function() {
     $([document.documentElement, document.body]).animate({
@@ -17,6 +32,14 @@ $("#profileArrow").click(function() {
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#wrapper").offset().top
     }, 700);
+});
+
+$("button").mouseover(function() {
+    $(this).stop().animate({ "background-position-x": "0px" }, 250);
+});
+
+$("button").mouseleave(function() {
+    $(this).stop().animate({ "background-position-x": "-540px" }, 300);
 });
 
 var hogwartsImages = [
@@ -54,6 +77,7 @@ $("#hogwartsImagesRight").click(function() {
     var hogwartsImage = document.getElementById("hogwartsImages").getAttribute("src");
 
     for (i = 0; i < hogwartsImages.length; i++) {
+
         if (hogwartsImage == hogwartsImages[i]) {
             var image = hogwartsImages[i];
             var imageIndex = hogwartsImages.indexOf(image)+1;
