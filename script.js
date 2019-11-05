@@ -68,9 +68,12 @@ var dungeonsImages = [
 ];
 
 var csharpImages = [
-    "img/project3.jpg",
-    "img/project3.jpg",
-    "img/project3.jpg"
+    "img/RSS1.png",
+    "img/RSS2.png",
+    "img/RSS3.png",
+    "img/RSS4.png",
+    "img/RSS5.png",
+    "img/RSS6.png",
 ];
 
 $("#hogwartsImagesRight").click(function() {
@@ -172,7 +175,7 @@ $("#csharpImagesRight").click(function() {
             var image = csharpImages[i];
             var imageIndex = csharpImages.indexOf(image)+1;
             document.getElementById("csharpImages").setAttribute("src", csharpImages[imageIndex]);  
-            if (i == 2) {
+            if (i == 5) {
                 document.getElementById("csharpImages").setAttribute("src", csharpImages[0]);     
             }  
         }
@@ -188,7 +191,7 @@ $("#csharpImagesLeft").click(function() {
             var imageIndex = csharpImages.indexOf(image)-1;
             document.getElementById("csharpImages").setAttribute("src", csharpImages[imageIndex]);  
             if (i == 0) {
-                document.getElementById("csharpImages").setAttribute("src", csharpImages[2]);     
+                document.getElementById("csharpImages").setAttribute("src", csharpImages[5]);     
             }  
         }
     }
@@ -198,7 +201,7 @@ $("#csharpImagesLeft").click(function() {
 function runBarAnimation() {
     var dict = {
         "bar1": 100, "bar2": 85, "bar3": 85, "bar4": 70,
-         "bar5": 90, "bar6": 85, "bar7": 85, "bar8": 70
+         "bar5": 100, "bar6": 85, "bar7": 85, "bar8": 70
     };
 
     for (var key in dict) {
